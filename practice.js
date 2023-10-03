@@ -25,7 +25,7 @@ function varsAndTypes(element) {
   let store = 'coop'
   let name = 'John'
 
-  let message = (name + " gick till " + store + " för att handla korv!")
+  let message = (name + " går till " + store + " för att handla frukter!")
   console.log(message)
   //console.log(varsAndTypes, typeof(varsAndTypes))
 }
@@ -33,8 +33,14 @@ function varsAndTypes(element) {
 function operators(element) {
   // kod för att visa vad du lärt dig om operatorer
 
-  let varor 
-  console.log(testmes)
+  let banan = 12
+  let melon = 32
+
+  let total = melon + banan
+  let message = ("john ska nu betala för melonen och bananen, vilket blev " + total +" kr.")
+  let rabbat = total - 5
+  let message2 = ("frukterna var på salu (5kr), slutgiltiga priset blev " + rabbat + " kr.")
+  console.log(message, message2)
 }
 
 function controlStructures(element) {
