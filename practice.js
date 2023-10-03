@@ -73,19 +73,19 @@ function domAndEvents(element) {
   // använd med html och listeners
   console.log(element, 'lyssna efter event för att ändra element')
 })
+}
 
 
 function domManipulation(element) {
-  let newtext = element.querySelector('#controls > h1')
-  let button = element.querySelector('#button')
+  let newtext = document.querySelector('#textid')
+ // let button = document.querySelector('#button') skulle klicka här för att byta
   
   
   newtext.addEventListener('click', () => {
-    newtext.textcontent = ("hi")
+    newtext.textContent = 'hej'
     
   })
   // kod för att visa vad du lärt dig om DOM-manipulation
   // skapa element och lägga till och ta bort
   //element.innerHTML = 'dom manipulation, ändra och lägg till element'
-}
 }
