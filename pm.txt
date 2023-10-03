@@ -1,0 +1,7 @@
+## vad som gick bra 
+Variabler och operator gick lätt för dett var bara att sätta ett värde och consola logga det
+
+
+## vad som gick mindre bra
+Förstår verkligen inte varför jag inte kan komma in header och byta texten. På slutet så blev alla element huller om buller. föra att byta texten, och rotera bilden
+Hann inte med arrays. 
