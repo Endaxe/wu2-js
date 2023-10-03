@@ -1,4 +1,4 @@
-export function setupPractice (element) {
+export function setupPractice(element) {
   // följande funktioner körs i ordning
   // se output i console.log()
   // du ska i varje del arbeta med att visa vad du lärt dig
@@ -15,7 +15,9 @@ export function setupPractice (element) {
 
 
 
-  let domAndEvents = document.querySelector("app ")
+  let newtext = document.querySelector('#button > h1')
+  let button = document.querySelector('#button')
+  let text = newtext2
 }
 
 // du kan använda kontrollstrukturer och variabler etc. i 
@@ -37,7 +39,7 @@ function operators(element) {
   let melon = 32
 
   let total = melon + banan
-  let message = ("john ska nu betala för melonen och bananen, vilket blev " + total +" kr.")
+  let message = ("john ska nu betala för melonen och bananen, vilket blev " + total + " kr.")
   let rabbat = total - 5
   let message2 = ("frukterna var på salu (5kr), slutgiltiga priset blev " + rabbat + " kr.")
   console.log(message, message2)
@@ -50,21 +52,14 @@ function controlStructures(element) {
   console.log(controlStructures, controlStructures ? 'if' : 'loopar')
 }
 
-function arraysAndObjects (element) {
+function arraysAndObjects(element) {
   // kod för att visa vad du lärt dig om arrays och objekt
-  console.log(['arrays', {and: 'objects'}])
+  console.log(['arrays', { and: 'objects' }])
 }
 
-function domAndEvents (element) {
-  let button = document.querySelector("#button")
-
-  button.addEventListener('click', () =>{
+function domAndEvents(element) {
 
 
-
-
-
-  })
 
 
 
@@ -73,8 +68,14 @@ function domAndEvents (element) {
   console.log(element, 'lyssna efter event för att ändra element')
 }
 
-function domManipulation (element) {
+function domManipulation(element) {
+
+
+  button.addEventListener('click', () => {
+
+
+  })
   // kod för att visa vad du lärt dig om DOM-manipulation
   // skapa element och lägga till och ta bort
-  element.innerHTML = 'dom manipulation, ändra och lägg till element'
+  //element.innerHTML = 'dom manipulation, ändra och lägg till element'
 }
