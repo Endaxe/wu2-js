@@ -12,19 +12,29 @@ export function setupPractice (element) {
   arraysAndObjects(element)
   domAndEvents(element)
   domManipulation(element)
+
+
+
+  let domAndEvents = document.querySelector("app ")
 }
 
 // du kan använda kontrollstrukturer och variabler etc. i 
 // andra moment än där funktionen heter så såklart
 function varsAndTypes(element) {
   // kod för att visa vad du lärt dig om variabler och typer
-  let varsAndTypes = 'varsAndTypes'
-  console.log(varsAndTypes, typeof(varsAndTypes))
+  let store = 'coop'
+  let name = 'John'
+
+  let message = (name + " gick till " + store + " för att handla korv!")
+  console.log(message)
+  //console.log(varsAndTypes, typeof(varsAndTypes))
 }
 
 function operators(element) {
   // kod för att visa vad du lärt dig om operatorer
-  console.log('operators === ', 1 === 1)
+
+  let varor 
+  console.log(testmes)
 }
 
 function controlStructures(element) {
@@ -40,6 +50,18 @@ function arraysAndObjects (element) {
 }
 
 function domAndEvents (element) {
+  let button = document.querySelector("#button")
+
+  button.addEventListener('click', () =>{
+
+
+
+
+
+  })
+
+
+
   // kod för att visa vad du lärt dig om DOM och events
   // använd med html och listeners
   console.log(element, 'lyssna efter event för att ändra element')
