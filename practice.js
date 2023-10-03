@@ -4,7 +4,7 @@ export function setupPractice(element) {
   // du ska i varje del arbeta med att visa vad du lärt dig
   // i slutändan ska projektet köras och inte innehålla fel och
   // du ska kunna förklara vad, hur varför PM
-
+  
   // Samtliga delar finns förklarade/beskrivna https://webbutveckling.jensa.dev/tekniker/javascript/
   varsAndTypes(element)
   operators(element)
@@ -12,12 +12,7 @@ export function setupPractice(element) {
   arraysAndObjects(element)
   domAndEvents(element)
   domManipulation(element)
-
-
-
-  let newtext = document.querySelector('#button > h1')
-  let button = document.querySelector('#button')
-  let text = newtext2
+  
 }
 
 // du kan använda kontrollstrukturer och variabler etc. i 
@@ -26,7 +21,7 @@ function varsAndTypes(element) {
   // kod för att visa vad du lärt dig om variabler och typer
   let store = 'coop'
   let name = 'John'
-
+  
   let message = (name + " går till " + store + " för att handla frukter!")
   console.log(message)
   //console.log(varsAndTypes, typeof(varsAndTypes))
@@ -34,10 +29,10 @@ function varsAndTypes(element) {
 
 function operators(element) {
   // kod för att visa vad du lärt dig om operatorer
-
+  
   let banan = 12
   let melon = 32
-
+  
   let total = melon + banan
   let message = ("john ska nu betala för melonen och bananen, vilket blev " + total + " kr.")
   let rabbat = total - 5
@@ -54,28 +49,43 @@ function controlStructures(element) {
 
 function arraysAndObjects(element) {
   // kod för att visa vad du lärt dig om arrays och objekt
+  
+  // const names = {carl, johan, thomas}
   console.log(['arrays', { and: 'objects' }])
 }
 
 function domAndEvents(element) {
+  const imagespin = (wheelRandom) => {
 
+  }
+  let spinbutton = element.querySelector('#imagespin')
+  const wheelieImage = element.querySelector('#wheelie-image')
 
-
-
-
+  spinbutton.addEventListener('click', () => {
+    const spinTime = 200
+    const wheelRandom = Math.ceil(Math.random()*14)
+  wheelieImage.classList.add('spin-it')
+  
+  
+  
+  
   // kod för att visa vad du lärt dig om DOM och events
   // använd med html och listeners
   console.log(element, 'lyssna efter event för att ändra element')
-}
+})
+
 
 function domManipulation(element) {
-
-
-  button.addEventListener('click', () => {
-
-
+  let newtext = element.querySelector('#controls > h1')
+  let button = element.querySelector('#button')
+  
+  
+  newtext.addEventListener('click', () => {
+    newtext.textcontent = ("hi")
+    
   })
   // kod för att visa vad du lärt dig om DOM-manipulation
   // skapa element och lägga till och ta bort
   //element.innerHTML = 'dom manipulation, ändra och lägg till element'
+}
 }
