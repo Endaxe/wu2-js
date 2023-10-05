@@ -50,8 +50,8 @@ function controlStructures(element) {
 function arraysAndObjects(element) {
   // kod för att visa vad du lärt dig om arrays och objekt
   
-  // const names = {carl, johan, thomas}
-  console.log(['arrays', { and: 'objects' }])
+   let names = ['carl', 'johan', 'thomas']
+  console.log(names[2])
 }
 
 function domAndEvents(element) {
@@ -62,9 +62,6 @@ function domAndEvents(element) {
   const wheelieImage = element.querySelector('#wheelie-image')
 
   spinbutton.addEventListener('click', () => {
-    const spinTime = 200
-    const wheelRandom = Math.ceil(Math.random()*14)
-  wheelieImage.classList.add('spin-it')
   
   
   
@@ -78,11 +75,12 @@ function domAndEvents(element) {
 
 function domManipulation(element) {
   let newtext = document.querySelector('#textid')
+  let button = document.querySelector('#button')
  // let button = document.querySelector('#button') skulle klicka här för att byta
   
   
-  newtext.addEventListener('click', () => {
-    newtext.textContent = 'hej'
+  button.addEventListener('click', () => {
+    newtext.textContent = 'FUNKAR'
     
   })
   // kod för att visa vad du lärt dig om DOM-manipulation
